@@ -48,7 +48,7 @@ section {
 ------------------------------------- */
 
 .error-code span {
-  background-image: url('/img/fondo-404.jpg');
+  background-image: url('./img/fondo-404.jpg');
   background-clip: text;
   -webkit-background-clip: text;
   filter: sepia(80%) contrast(0.5) brightness(0.9);
@@ -125,7 +125,7 @@ section {
     font-size: 19px;
   }
   body{
-    background-image: linear-gradient(rgba(240, 240, 240, 0.7), rgba(240, 240, 240, 0.7)), url('/img/patron10.jpg');    
+    background-image: linear-gradient(rgba(240, 240, 240, 0.7), rgba(240, 240, 240, 0.7)), url('./img/patron10.jpg');    
     background-size: 85vw 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -157,7 +157,7 @@ section {
 
 @media (max-width: 766px) {
   body{
-    background-image: linear-gradient(rgba(240, 240, 240, 0.7), rgba(240, 240, 240, 0.7)), url('/img/patron2.jpg');    
+    background-image: linear-gradient(rgba(240, 240, 240, 0.7), rgba(240, 240, 240, 0.7)), url('./img/patron2.jpg');    
     background-size: 95vw 100vh;
     background-repeat: no-repeat;
     background-position: center;
