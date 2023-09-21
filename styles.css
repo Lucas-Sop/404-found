@@ -1,0 +1,187 @@
+/*Diseño en FIRST DESKTOP*/
+
+/*-------------------------------------
+-----------------Body-----------------
+------------------------------------- */
+body {
+  margin: 0;
+  padding: 0px 15%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(rgba(240, 240, 240, 0.7), rgba(240, 240, 240, 0.7)), url('/img/patron.jpg');    
+  background-size: 80vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Syne','sans-serif';
+}
+
+.error-container {
+  position: relative;
+  display: inline-block;
+}
+  
+/*-------------------------------------
+--------Contenedor principal-----------
+------------------------------------- */
+
+section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  
+}
+
+/*-------------------------------------
+-----------------404-----------------
+------------------------------------- */
+
+.error-code {
+  font-size: 12vw;
+  font-weight: 800;
+  color:transparent;
+}
+  
+/*-------------------------------------
+-----------------404 imagen------------
+------------------------------------- */
+
+.error-code span {
+  background-image: url('/img/fondo-404.jpg');
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: sepia(80%) contrast(0.5) brightness(0.9);
+} 
+
+/*-------------------------------------
+--------SOMETHING WENT WRONG-----------
+------------------------------------- */
+
+.error-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;  
+  padding-top: 40px;
+}
+
+
+/*-------------------------------------
+-----------------Texto ERROR-----------
+------------------------------------- */
+
+.error-message {
+  font-size: 15px;
+  color: #555;
+  margin: 30px 0 30px;
+}
+
+
+
+/*-------------------------------------
+-----------------Boton-----------------
+------------------------------------- */
+
+.div-button{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15vh;
+}
+
+.continue-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  position:relative;
+  box-shadow: 3px 3px 5px black; 
+  margin-top: 20px;
+}
+
+.continue-button:hover {
+  background-color: #555;
+}
+
+
+/*************************************
+*********** MEDIA QUERY **************
+**************************************/
+
+
+/*---------------Laptop------------- */
+
+@media (max-width: 1439px) {
+  .error-title {
+    font-size: 30px;
+  }
+  .error-message {
+    font-size: 14px;
+  }
+  .continue-button {
+    font-size: 19px;
+  }
+  body{
+    background-image: linear-gradient(rgba(240, 240, 240, 0.7), rgba(240, 240, 240, 0.7)), url('/img/patron10.jpg');    
+    background-size: 85vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+/*---------------Tablet------------- */
+
+@media (max-width: 1023px) {
+  body{
+        
+    background-size: 90vw 100vh;
+  }
+  .error-title {
+    font-size: 25px;
+  }
+
+  .error-message {
+    font-size: 13px;
+  }
+
+  .continue-button {
+    font-size: 16px;
+  }
+}
+
+/*---------------Mobile------------- */
+
+@media (max-width: 766px) {
+  body{
+    background-image: linear-gradient(rgba(240, 240, 240, 0.7), rgba(240, 240, 240, 0.7)), url('/img/patron2.jpg');    
+    background-size: 95vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .error-code {
+    font-size: 92px;
+  }
+
+  .error-title {
+    font-size: 20px;
+  }
+
+  .error-message {
+    font-size: 12px;
+  }
+
+  .continue-button {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
